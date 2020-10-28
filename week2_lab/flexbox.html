@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox layout demo</title>
+    <style>
+        /*css will go here*/
+        html,body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #container{
+            width: 1000px;
+            height: 100%;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+        }
+        #header{
+            background-color: tomato;
+            text-align: center;
+        }
+        #nav{
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+        }
+        #content{
+            background-color: teal;
+            display: flex;
+        }
+        #footer{
+            background-color: yellow;
+            text-align: center;
+            line-height: 100px;
+        }
+        .btm:link{
+            background-color: yellow;
+            color: black;
+            padding: 10px;
+            margin: 20px 20px 20px 0;
+            font-size: larger;
+            text-decoration: none;
+            font-family: sans-serif;
+            border-radius: 15px;
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.445);
+        }
+        .btm:visited{
+            color: black;
+        }
+        .btm:hover{
+            background-color: darkgrey;
+        }
+        .btm:active{
+            background-color: green;
+        }
+        .content-left{
+            width: 500px;
+            height: 500px;
+            background-color: darkred;
+        }
+        .content-right{
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Welcome to the Flexbox Div page</h1>
+        </div>
+            <div id="nav">
+                <a href="#" class="btm">home</a>
+                <a href="#" class="btm">bio</a>
+                <a href="#" class="btm">images</a>
+                <a href="#" class="btm">contact</a>
+            </div>
+        <div id="content">
+            <div class="content-left">
+                    left content here
+                <p style="color: white;">
+                    Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. It's ironic he could save others from death, but not himself.
+                </p>
+            </div>
+            <div class="content-right">right content here
+                <img src="images/stick.gif" alt="get stickbugged lol" width="500px">
+            </div>
+        </div>
+        <div id="footer">
+            &copy; 2020 Jack Maloney New England Institute of Technology
+        </div>
+    </div>
+</body>
+</html>

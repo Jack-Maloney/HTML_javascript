@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Example Lab</title>
+    <style>
+        body{
+            height: 100%;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 802px;
+            margin: auto;
+            align-items: stretch;
+        }
+    
+        .header{
+            background-color: green;
+            height: 300px;
+            width: 800px;
+            border: 1px solid black;
+        }
+        .content{
+            background-color: red;
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        h1{
+            background-color: yellow;
+        }
+        .break{
+        flex-basis: 100%;
+        width: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Welcome to my Div Page</h1>
+        </div>
+        <div class="content"></div>
+    </div>
+    <!--
+    <div class="wrapper">
+
+        <div class="break"></div>
+        <div class="content"></div>
+    </div>
+    <div class="wrapper">
+
+    </div>-->
+</body>
+</html>
