@@ -18,14 +18,33 @@ var finish = 700
 
 //fuel values
 
-var startFuel = 601;
-var fuel = startFuel
+var startFuel = randomRanga(702, 100);
+var fuel = startFuel;
 
-var barFullWidth = 300
+var barFullWidth = 300;
 //Start timer stuff
 var sec = 3;
 var fps = 60;
 var frames = fps;
+
+var car = new car();
+car.w = 100;
+car.h = 45;
+car.y = 400;
+car.color = 'green';
+
+
+var car2 = new car();
+car.w = 75;
+car.h = 60;
+car.y = 300;
+
+var car3 = new car();
+car.w = 100;
+car.h = 100;
+car.y = 150;
+
+
 
 function draw() {
     //call animation
@@ -56,13 +75,22 @@ function draw() {
     drawFuelText();
 
 
+    car.x = x;
+    car.draw();
+
+    car2.x = x;
+    car2.draw();
+
+    car3.x = x;
+    car3.drawSprite();
+
     //updating x
     if (sec > 0) {
         runStartTimer();
         drawStartTimer();
     }
     else {
-        if (fuel > 0) {
+        if (fuel > 0){
             x += 1;
             fuel -= 1;
         }
@@ -85,10 +113,10 @@ function draw() {
 }
 
 
-function runStartTimer() {
+function runStartTimer(){
     frames -= 1;
 
-    if (frames < 0) {
+    if (frames < 0){
         frames = fps;
         sec -= 1
     }
