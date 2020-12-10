@@ -1,0 +1,30 @@
+body{
+    background-color: teal;
+    font-family: cursive;
+    color: crimson;
+    display:flex;
+    justify-content: center;
+}
+
+#container{
+    width: 970px;
+    padding: 10px;
+}
+
+h1{
+    width: 950px;
+    padding: 10px;
+    text-align: center;
+    background-color: darkblue;
+    border: 2px solid darkred;
+}
+
+.sections{
+    width: 950px;
+    padding: 10px;
+    background-color: darkslategray;
+}
+
+img{
+    border: 2px solid darkseagreen;
+}
